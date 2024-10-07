@@ -16,7 +16,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nome\": \"João da Silva\",\r\n    \"genero\": \"Masculino\",\r\n    \"etnia\": \"Parda\",\r\n    \"dataNascimento\": \"2000-05-15\",\r\n    \"deficiencia\": false,\r\n    \"telefone\": \"11987654321\",\r\n    \"alfabetizado\": true,\r\n    \"rg\": \"123456789\",\r\n    \"dataEmissaoRg\": \"2015-05-20\",\r\n    \"cpf\": \"12345678901\",\r\n    \"bairro\": \"Centro\",\r\n    \"endereco\": \"Rua das Flores, 123\",\r\n    \"rendaFamiliarMensal\": 1500.00,\r\n    \"recebeBolsaFamilia\": true,\r\n    \"nis\": \"123456789012345\",\r\n    \"direitoImagem\": true\r\n}",
+							"raw": "{\r\n    \"nome\": \"João da Silva\",\r\n    \"genero\": \"Masculino\",\r\n    \"etnia\": \"Parda\",\r\n    \"dataNascimento\": \"2000-05-15\",\r\n    \"deficiencia\": false,\r\n    \"telefone\": \"11987654321\",\r\n    \"alfabetizado\": true,\r\n    \"rg\": \"123456789\",\r\n    \"dataEmissaoRg\": \"2015-05-20\",\r\n    \"cpf\": \"12345678902\",\r\n    \"bairro\": \"Centro\",\r\n    \"endereco\": \"Rua das Flores, 123\",\r\n    \"rendaFamiliarMensal\": 1500.00,\r\n    \"recebeBolsaFamilia\": true,\r\n    \"nis\": \"123456789012345\",\r\n    \"direitoImagem\": true\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -43,14 +43,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/usuario",
+							"raw": "http://localhost:8080/usuarios",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"usuario"
+								"usuarios"
 							]
 						}
 					},
@@ -62,14 +62,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/usuario/{id}",
+							"raw": "http://localhost:8080/usuarios/{id}",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"usuario",
+								"usuarios",
 								"{id}"
 							]
 						}
@@ -82,14 +82,14 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/usuario/{id}",
+							"raw": "http://localhost:8080/usuarios/{id}",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"usuario",
+								"usuarios",
 								"{id}"
 							]
 						}

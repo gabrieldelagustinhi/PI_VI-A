@@ -1,5 +1,6 @@
 package com.imdaz.controller;
 
+import com.imdaz.controller.response.AlunoResponse;
 import com.imdaz.model.Aluno;
 import com.imdaz.service.AlunoService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +16,7 @@ public class AlunoController {
     private AlunoService alunoService;
 
     @GetMapping
-    public List<Aluno> listarAlunos() {
+    public List<AlunoResponse> listarAlunos() {
         return alunoService.listarAlunos();
     }
 
@@ -25,7 +26,7 @@ public class AlunoController {
     }
 
     @GetMapping("/{id}")
-    public Aluno buscarAlunoPorId(@PathVariable Long id) {
+    public AlunoResponse buscarAlunoPorId(@PathVariable Long id) {
         return alunoService.buscarPorId(id);
     }
 

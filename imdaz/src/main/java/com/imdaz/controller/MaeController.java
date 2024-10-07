@@ -1,5 +1,6 @@
 package com.imdaz.controller;
 
+import com.imdaz.controller.response.MaeResponse;
 import com.imdaz.model.Mae;
 import com.imdaz.service.MaeService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,17 +17,17 @@ public class MaeController {
     private MaeService maeService;
 
     @GetMapping
-    public List<Mae> listarMaes() {
+    public List<MaeResponse> listarMaes() {
         return maeService.listarMaes();
     }
 
     @PostMapping
-    public Mae salvarMae(@RequestBody Mae mae) {
+    public MaeResponse salvarMae(@RequestBody Mae mae) {
         return maeService.salvarMae(mae);
     }
 
     @GetMapping("/{id}")
-    public Mae buscarMaePorId(@PathVariable Long id) {
+    public MaeResponse buscarMaePorId(@PathVariable Long id) {
         return maeService.buscarPorId(id);
     }
 

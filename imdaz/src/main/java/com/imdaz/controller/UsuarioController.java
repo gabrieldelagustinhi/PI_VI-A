@@ -1,5 +1,7 @@
 package com.imdaz.controller;
 
+import com.imdaz.controller.request.UsuarioRequest;
+import com.imdaz.controller.response.NomeResponse;
 import com.imdaz.model.Usuario;
 import com.imdaz.service.UsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,8 +22,8 @@ public class UsuarioController {
     }
 
     @PostMapping
-    public Usuario salvarUsuario(@RequestBody Usuario usuario) {
-        return usuarioService.salvarUsuario(usuario);
+    public Usuario salvarUsuario(@RequestBody UsuarioRequest resquest) {
+        return usuarioService.salvarUsuario(resquest);
     }
 
     @GetMapping("/{id}")
@@ -30,7 +32,7 @@ public class UsuarioController {
     }
 
     @GetMapping("/aniversariantes")
-    public List<Usuario> listarAniversariantes() {
+    public List<NomeResponse> listarAniversariantes() {
         return usuarioService.buscarAniversariantes();
     }
 
